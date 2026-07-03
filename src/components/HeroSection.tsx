@@ -32,6 +32,23 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
+      <FadeIn
+        delay={0.45}
+        x={-60}
+        y={0}
+        className="absolute bottom-[38%] left-[8%] hidden w-[90px] -rotate-12 sm:block md:left-[14%] md:w-[130px]"
+      >
+        <img src="/stack/vscode.svg" alt="" className="w-full" />
+      </FadeIn>
+      <FadeIn
+        delay={0.55}
+        x={60}
+        y={0}
+        className="absolute bottom-[30%] right-[8%] hidden w-[80px] rotate-12 sm:block md:right-[14%] md:w-[115px]"
+      >
+        <img src="/stack/github.svg" alt="" className="w-full" />
+      </FadeIn>
+
       <FadeIn delay={0.25} y={40} className="absolute inset-x-0 bottom-0 flex justify-center">
         <img
           src="/projects/reza.png"
@@ -46,7 +63,7 @@ export default function HeroSection() {
             className="mx-auto max-w-[240px] text-center font-light uppercase leading-snug tracking-wide text-[#2C3440] md:mx-0 md:max-w-[260px] md:text-left"
             style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
-            web developer yang berdedikasi membangun website yang cepat, modern, dan tak terlupakan
+            freelance web developer dari Indramayu. membangun website untuk bisnis yang ingin dianggap serius di internet
           </p>
         </FadeIn>
       </div>

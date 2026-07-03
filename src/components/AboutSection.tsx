@@ -2,11 +2,8 @@ import FadeIn from './FadeIn';
 import AnimatedText from './AnimatedText';
 import ContactButton from './ContactButton';
 
-const BASE =
-  'https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7';
-
 const ABOUT_TEXT =
-  'Sebagai web developer, saya fokus membangun website yang cepat, responsif, dan nyaman digunakan — dari frontend hingga backend. Saya sangat menikmati bekerja sama dengan bisnis yang ingin tampil menonjol lewat kehadiran digital terbaiknya. Mari bangun sesuatu yang luar biasa bersama!';
+  'Saya membangun website yang cepat, aman, dan gampang dikelola untuk bisnis kecil. Teknologinya sama dengan yang dipakai perusahaan besar: Next.js, TypeScript, dan infrastruktur modern.';
 
 export default function AboutSection() {
   return (
@@ -19,36 +16,36 @@ export default function AboutSection() {
         x={-80}
         y={0}
         duration={0.9}
-        className="hidden sm:block absolute left-[1%] top-[4%] w-[120px] sm:left-[2%] sm:w-[160px] md:left-[4%] md:w-[210px]"
+        className="hidden sm:block absolute left-[2%] top-[6%] w-[70px] -rotate-12 md:left-[5%] md:w-[110px]"
       >
-        <img src={`${BASE}/moon_icon.11395d36.png`} alt="" className="w-full" />
+        <img src="/stack/nextjs.svg" alt="Next.js" className="w-full" />
       </FadeIn>
       <FadeIn
         delay={0.25}
         x={-80}
         y={0}
         duration={0.9}
-        className="hidden sm:block absolute bottom-[8%] left-[3%] w-[100px] sm:left-[6%] sm:w-[140px] md:left-[10%] md:w-[180px]"
+        className="hidden sm:block absolute bottom-[10%] left-[4%] w-[70px] rotate-6 md:left-[8%] md:w-[100px]"
       >
-        <img src={`${BASE}/p59_1.4659672e.png`} alt="" className="w-full" />
+        <img src="/stack/postgresql.svg" alt="PostgreSQL" className="w-full" />
       </FadeIn>
       <FadeIn
         delay={0.15}
         x={80}
         y={0}
         duration={0.9}
-        className="hidden sm:block absolute right-[1%] top-[4%] w-[120px] sm:right-[2%] sm:w-[160px] md:right-[4%] md:w-[210px]"
+        className="hidden sm:block absolute right-[2%] top-[6%] w-[70px] rotate-12 md:right-[5%] md:w-[110px]"
       >
-        <img src={`${BASE}/lego_icon-1.703bb594.png`} alt="" className="w-full" />
+        <img src="/stack/typescript.svg" alt="TypeScript" className="w-full" />
       </FadeIn>
       <FadeIn
         delay={0.3}
         x={80}
         y={0}
         duration={0.9}
-        className="hidden sm:block absolute bottom-[8%] right-[3%] w-[130px] sm:right-[6%] sm:w-[170px] md:right-[10%] md:w-[220px]"
+        className="hidden sm:block absolute bottom-[10%] right-[4%] w-[80px] -rotate-6 md:right-[8%] md:w-[115px]"
       >
-        <img src={`${BASE}/Group_134-1.2e04f3ce.png`} alt="" className="w-full" />
+        <img src="/stack/tailwind.svg" alt="Tailwind CSS" className="w-full" />
       </FadeIn>
 
       <div className="flex flex-col items-center gap-10 sm:gap-14 md:gap-16">
@@ -61,12 +58,22 @@ export default function AboutSection() {
           </h2>
         </FadeIn>
 
-        <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
+        <div className="flex flex-col items-center gap-10 sm:gap-12">
           <AnimatedText
             text={ABOUT_TEXT}
             className="max-w-[560px] text-center font-medium leading-relaxed text-[#2C3440]"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' }}
           />
+
+          <FadeIn delay={0.1} y={30}>
+            <p
+              className="max-w-[480px] text-center font-light leading-relaxed text-[#2C3440] opacity-70"
+              style={{ fontSize: 'clamp(0.9rem, 1.7vw, 1.15rem)' }}
+            >
+             
+            </p>
+          </FadeIn>
+
           <ContactButton />
         </div>
       </div>

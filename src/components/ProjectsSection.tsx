@@ -1,7 +1,12 @@
-import { useRef } from 'react';
-import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion';
-import FadeIn from './FadeIn';
-import LiveProjectButton from './LiveProjectButton';
+import { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  type MotionValue,
+} from "framer-motion";
+import FadeIn from "./FadeIn";
+import LiveProjectButton from "./LiveProjectButton";
 
 interface Project {
   number: string;
@@ -9,22 +14,27 @@ interface Project {
   category: string;
   url: string;
   image: string;
+  description: string;
 }
 
 const PROJECTS: Project[] = [
   {
-    number: '01',
-    name: 'Topup Zazstore',
-    category: 'Website Top Up Game',
-    url: 'https://zazstore.my.id',
-    image: '/projects/zazstore',
+    number: "01",
+    name: "Topup Zazstore",
+    category: "Project Klien Pertama",
+    url: "https://zazstore.my.id",
+    image: "/projects/zazstore",
+    description:
+      "Website top-up game untuk klien UMKM. Scope disesuaikan dengan pasar klien yang mayoritas COD: admin CRUD, SEO, dan perapian UI.",
   },
   {
-    number: '02',
-    name: 'Notes App',
-    category: 'Aplikasi Web',
-    url: 'https://notes-app-five-khaki.vercel.app/notes',
-    image: '/projects/notesapp',
+    number: "02",
+    name: "Notes App",
+    category: "Lab Belajar Fullstack",
+    url: "https://notes-app-five-khaki.vercel.app/notes",
+    image: "/projects/notesapp",
+    description:
+      "Aplikasi catatan yang saya bangun untuk menguasai fundamental fullstack. Autentikasi lengkap dengan credentials, OAuth, dan verifikasi email",
   },
 ];
 
@@ -40,10 +50,14 @@ function ProjectCard({
   progress: MotionValue<number>;
 }) {
   const targetScale = 1 - (totalCards - 1 - index) * 0.03;
-  const scale = useTransform(progress, [index / totalCards, 1], [1, targetScale]);
+  const scale = useTransform(
+    progress,
+    [index / totalCards, 1],
+    [1, targetScale],
+  );
 
   return (
-    <div className="min-h-[85vh]">
+    <div className="mb-20 min-h-[90vh] last:mb-0 md:mb-32">
       <motion.div
         className="sticky top-24 rounded-[40px] border-2 border-[#2C3440] bg-[#F5E7DA] p-4 sm:rounded-[50px] sm:p-6 md:top-32 md:rounded-[60px] md:p-8"
         style={{ scale, top: `calc(6rem + ${index * 28}px)` }}
@@ -52,7 +66,7 @@ function ProjectCard({
           <div className="flex items-center gap-5 md:gap-8">
             <span
               className="hero-heading font-black leading-none"
-              style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
+              style={{ fontSize: "clamp(3rem, 10vw, 140px)" }}
             >
               {project.number}
             </span>
@@ -62,7 +76,7 @@ function ProjectCard({
               </span>
               <span
                 className="font-medium uppercase text-[#2C3440]"
-                style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}
+                style={{ fontSize: "clamp(1rem, 2.2vw, 2.1rem)" }}
               >
                 {project.name}
               </span>
@@ -71,8 +85,18 @@ function ProjectCard({
           <LiveProjectButton href={project.url} />
         </div>
 
+        <p
+          className="max-w-3xl pb-6 font-light leading-relaxed text-[#2C3440] opacity-70 md:pb-8"
+          style={{ fontSize: "clamp(0.85rem, 1.5vw, 1.1rem)" }}
+        >
+          {project.description}
+        </p>
+
         <picture>
-          <source media="(min-width: 768px)" srcSet={`${project.image}-pc.png`} />
+          <source
+            media="(min-width: 768px)"
+            srcSet={`${project.image}-pc.png`}
+          />
           <img
             src={`${project.image}-mobile.png`}
             alt={`${project.name} pratinjau`}
@@ -89,19 +113,19 @@ export default function ProjectsSection() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start start', 'end end'],
+    offset: ["start start", "end end"],
   });
 
   return (
     <section
       id="projects"
       ref={ref}
-      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#F5E7DA] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
+      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#2C3440] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
     >
       <FadeIn delay={0} y={40}>
         <h2
-          className="hero-heading text-center font-black uppercase leading-none tracking-tight"
-          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          className="text-center font-black uppercase leading-none tracking-tight text-[#FDF6EC]"
+          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
         >
           Proyek
         </h2>

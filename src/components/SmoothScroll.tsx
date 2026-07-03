@@ -8,6 +8,7 @@ export default function SmoothScroll() {
       duration: 1.5,
       wheelMultiplier: 0.8,
       easing: (t) => 1 - Math.pow(1 - t, 3),
+      anchors: true,
     });
     let raf = requestAnimationFrame(function loop(time) {
       lenis.raf(time);

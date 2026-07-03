@@ -25,8 +25,9 @@ export default function FooterSection() {
             className="max-w-[480px] text-center font-light leading-relaxed text-[#2C3440] opacity-70"
             style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.2rem)' }}
           >
-            Punya ide proyek atau butuh website untuk bisnis kamu? Jangan ragu untuk
-            menghubungi saya.
+            Punya usaha dan butuh website? Ceritakan dulu kebutuhannya, nanti kita cari bentuk
+            yang masuk akal untuk skala bisnis kamu. Tidak semua usaha butuh fitur mahal, dan
+            saya akan bilang terus terang kalau memang tidak perlu.
           </p>
         </FadeIn>
 
