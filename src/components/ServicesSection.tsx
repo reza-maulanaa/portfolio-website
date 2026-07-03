@@ -3,33 +3,33 @@ import FadeIn from './FadeIn';
 const SERVICES = [
   {
     number: '01',
-    name: 'Pengembangan Frontend',
+    name: 'Katalog Produk & Admin Dashboard',
     description:
-      'Membangun antarmuka web yang responsif, cepat, dan interaktif dengan teknologi modern seperti React, Astro, dan Tailwind CSS.',
+      'Etalase produk online dengan dashboard admin, jadi kamu bisa tambah, ubah, dan sembunyikan produk sendiri tanpa perlu memanggil developer setiap ada perubahan.',
   },
   {
     number: '02',
-    name: 'Pengembangan Backend',
+    name: 'Company Profile / Landing Page',
     description:
-      'Merancang API, database, dan logika server yang aman, skalabel, dan andal untuk menopang aplikasi web dari balik layar.',
+      'Website profil usaha yang cepat dan rapi: siapa kamu, apa yang kamu tawarkan, dan cara menghubungimu. Dirancang supaya pengunjung langsung tahu harus klik apa.',
   },
   {
     number: '03',
-    name: 'Desain UI/UX',
+    name: 'Sistem Booking / Reservasi',
     description:
-      'Mendesain tampilan dan alur pengguna yang bersih, modern, dan fokus pada konversi dengan perhatian pada tata letak, tipografi, dan pengalaman pengguna.',
+      'Pelanggan pilih jadwal dan booking sendiri dari HP-nya, kamu tinggal terima notifikasi. Tidak perlu lagi balas chat satu per satu untuk mengatur janji.',
   },
   {
     number: '04',
-    name: 'Optimasi Performa & SEO',
+    name: 'Undangan Digital',
     description:
-      'Mempercepat waktu muat, memperbaiki Core Web Vitals, dan mengoptimalkan struktur website agar mudah ditemukan di mesin pencari.',
+      'Undangan pernikahan atau acara berbentuk website: peta lokasi, RSVP, galeri foto, dan hitung mundur. Tinggal kirim link-nya lewat WhatsApp.',
   },
   {
     number: '05',
-    name: 'Deployment & Pemeliharaan',
+    name: 'Menu Digital QR Code',
     description:
-      'Menangani hosting, CI/CD, dan pemeliharaan berkala agar website tetap aman, terbarui, dan berjalan lancar setiap saat.',
+      'Untuk kafe, resto, dan warung: pelanggan scan QR di meja, menu langsung terbuka di HP mereka. Ganti harga atau menu kapan saja tanpa cetak ulang.',
   },
 ];
 

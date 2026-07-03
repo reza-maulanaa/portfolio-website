@@ -120,11 +120,11 @@ export default function ProjectsSection() {
     <section
       id="projects"
       ref={ref}
-      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#2C3440] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
+      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#FDF6EC] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
     >
       <FadeIn delay={0} y={40}>
         <h2
-          className="text-center font-black uppercase leading-none tracking-tight text-[#FDF6EC]"
+          className="hero-heading text-center font-black uppercase leading-none tracking-tight"
           style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
         >
           Proyek
