@@ -50,7 +50,7 @@ export default function ServicesSection() {
 
       <div className="mx-auto mt-16 max-w-5xl sm:mt-20 md:mt-28">
         {SERVICES.map((service, i) => (
-          <FadeIn key={service.number} delay={i * 0.1}>
+          <FadeIn key={service.number} delay={i * 0.08} x={i % 2 === 0 ? -100 : 100} y={0} duration={0.9}>
             <div
               className="flex items-start gap-6 py-8 sm:gap-10 sm:py-10 md:gap-14 md:py-12"
               style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(44, 52, 64, 0.2)' }}
