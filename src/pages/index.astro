@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection';
+import MarqueeSection from '../components/MarqueeSection';
+import AboutSection from '../components/AboutSection';
+import ServicesSection from '../components/ServicesSection';
+import ProjectsSection from '../components/ProjectsSection';
+import FooterSection from '../components/FooterSection';
+---
+
+<Layout>
+  <main class="bg-[#0C0C0C]" style="overflow-x: clip;">
+    <HeroSection client:load />
+    <MarqueeSection client:visible />
+    <AboutSection client:visible />
+    <ServicesSection client:visible />
+    <ProjectsSection client:visible />
+    <FooterSection client:visible />
+  </main>
+</Layout>

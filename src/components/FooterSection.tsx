@@ -1,0 +1,66 @@
+import FadeIn from './FadeIn';
+import ContactButton from './ContactButton';
+
+const NAV_LINKS = [
+  { label: 'Tentang', href: '#about' },
+  { label: 'Harga', href: '#price' },
+  { label: 'Proyek', href: '#projects' },
+];
+
+export default function FooterSection() {
+  return (
+    <footer id="contact" className="bg-[#0C0C0C] px-5 pb-8 pt-24 sm:px-8 sm:pt-32 md:px-10 md:pt-40">
+      <div className="flex flex-col items-center gap-10 sm:gap-12 md:gap-14">
+        <FadeIn delay={0} y={40}>
+          <h2
+            className="hero-heading text-center font-black uppercase leading-none tracking-tight"
+            style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          >
+            Mari Bekerja Sama
+          </h2>
+        </FadeIn>
+
+        <FadeIn delay={0.2} y={20}>
+          <p
+            className="max-w-[480px] text-center font-light leading-relaxed text-[#D7E2EA] opacity-70"
+            style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.2rem)' }}
+          >
+            Punya ide proyek atau butuh website untuk bisnis kamu? Jangan ragu untuk
+            menghubungi saya.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.35} y={20}>
+          <a href="mailto:fauzanbrawlstars@gmail.com">
+            <ContactButton />
+          </a>
+        </FadeIn>
+      </div>
+
+      <div
+        className="mt-20 flex flex-col items-center justify-between gap-6 pt-8 sm:mt-24 sm:flex-row md:mt-28"
+        style={{ borderTop: '1px solid rgba(215, 226, 234, 0.15)' }}
+      >
+        <span className="text-xs font-light uppercase tracking-wider text-[#D7E2EA] opacity-60 sm:text-sm">
+          © 2026 Reza Maulana
+        </span>
+
+        <nav className="flex gap-6 sm:gap-8">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-xs font-medium uppercase tracking-wider text-[#D7E2EA] transition-opacity duration-200 hover:opacity-70 sm:text-sm"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <span className="text-xs font-light uppercase tracking-wider text-[#D7E2EA] opacity-60 sm:text-sm">
+          Web Developer — Indonesia
+        </span>
+      </div>
+    </footer>
+  );
+}
