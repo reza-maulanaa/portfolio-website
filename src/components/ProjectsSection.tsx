@@ -45,7 +45,7 @@ function ProjectCard({
   return (
     <div className="min-h-[85vh]">
       <motion.div
-        className="sticky top-24 rounded-[40px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:rounded-[50px] sm:p-6 md:top-32 md:rounded-[60px] md:p-8"
+        className="sticky top-24 rounded-[40px] border-2 border-[#2C3440] bg-[#F5E7DA] p-4 sm:rounded-[50px] sm:p-6 md:top-32 md:rounded-[60px] md:p-8"
         style={{ scale, top: `calc(6rem + ${index * 28}px)` }}
       >
         <div className="flex flex-wrap items-center justify-between gap-4 pb-6 md:pb-8">
@@ -57,11 +57,11 @@ function ProjectCard({
               {project.number}
             </span>
             <div className="flex flex-col">
-              <span className="text-xs font-light uppercase tracking-widest text-[#D7E2EA] opacity-60 sm:text-sm">
+              <span className="text-xs font-light uppercase tracking-widest text-[#2C3440] opacity-60 sm:text-sm">
                 {project.category}
               </span>
               <span
-                className="font-medium uppercase text-[#D7E2EA]"
+                className="font-medium uppercase text-[#2C3440]"
                 style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}
               >
                 {project.name}
@@ -94,7 +94,7 @@ export default function ProjectsSection() {
     <section
       id="projects"
       ref={ref}
-      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#0C0C0C] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
+      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#F5E7DA] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
     >
       <FadeIn delay={0} y={40}>
         <h2

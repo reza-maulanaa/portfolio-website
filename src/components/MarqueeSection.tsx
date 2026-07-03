@@ -2,11 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 const IMAGES = [
   '/projects/zazstore-1.png',
-  '/projects/zazstore-2.png',
-  '/projects/zazstore-3.png',
   '/projects/notesapp-1.png',
-  '/projects/notesapp-2.png',
-  '/projects/notesapp-3.png',
+
 ];
 
 const ROW_1 = IMAGES.slice(0, 3);
@@ -52,7 +49,7 @@ export default function MarqueeSection() {
   }, []);
 
   return (
-    <section ref={ref} className="flex flex-col gap-3 bg-[#0C0C0C] pb-10 pt-24 sm:pt-32 md:pt-40">
+    <section ref={ref} className="flex flex-col gap-3 bg-[#FDF6EC] pb-10 pt-24 sm:pt-32 md:pt-40">
       <Row images={ROW_1} offset={offset} direction={1} />
       <Row images={ROW_2} offset={offset} direction={-1} />
     </section>

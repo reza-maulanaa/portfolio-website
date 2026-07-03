@@ -9,7 +9,7 @@ const NAV_LINKS = [
 
 export default function FooterSection() {
   return (
-    <footer id="contact" className="bg-[#0C0C0C] px-5 pb-8 pt-24 sm:px-8 sm:pt-32 md:px-10 md:pt-40">
+    <footer id="contact" className="bg-[#FDF6EC] px-5 pb-8 pt-24 sm:px-8 sm:pt-32 md:px-10 md:pt-40">
       <div className="flex flex-col items-center gap-10 sm:gap-12 md:gap-14">
         <FadeIn delay={0} y={40}>
           <h2
@@ -22,7 +22,7 @@ export default function FooterSection() {
 
         <FadeIn delay={0.2} y={20}>
           <p
-            className="max-w-[480px] text-center font-light leading-relaxed text-[#D7E2EA] opacity-70"
+            className="max-w-[480px] text-center font-light leading-relaxed text-[#2C3440] opacity-70"
             style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.2rem)' }}
           >
             Punya ide proyek atau butuh website untuk bisnis kamu? Jangan ragu untuk
@@ -39,9 +39,9 @@ export default function FooterSection() {
 
       <div
         className="mt-20 flex flex-col items-center justify-between gap-6 pt-8 sm:mt-24 sm:flex-row md:mt-28"
-        style={{ borderTop: '1px solid rgba(215, 226, 234, 0.15)' }}
+        style={{ borderTop: '1px solid rgba(44, 52, 64, 0.2)' }}
       >
-        <span className="text-xs font-light uppercase tracking-wider text-[#D7E2EA] opacity-60 sm:text-sm">
+        <span className="text-xs font-light uppercase tracking-wider text-[#2C3440] opacity-60 sm:text-sm">
           © 2026 Reza Maulana
         </span>
 
@@ -50,14 +50,14 @@ export default function FooterSection() {
             <a
               key={link.label}
               href={link.href}
-              className="text-xs font-medium uppercase tracking-wider text-[#D7E2EA] transition-opacity duration-200 hover:opacity-70 sm:text-sm"
+              className="text-xs font-medium uppercase tracking-wider text-[#2C3440] transition-opacity duration-200 hover:opacity-70 sm:text-sm"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <span className="text-xs font-light uppercase tracking-wider text-[#D7E2EA] opacity-60 sm:text-sm">
+        <span className="text-xs font-light uppercase tracking-wider text-[#2C3440] opacity-60 sm:text-sm">
           Web Developer — Indonesia
         </span>
       </div>
