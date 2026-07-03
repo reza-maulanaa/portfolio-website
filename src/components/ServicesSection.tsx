@@ -37,7 +37,7 @@ export default function ServicesSection() {
   return (
     <section
       id="price"
-      className="rounded-t-[40px] bg-[#DCE9F5] px-5 py-20 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:rounded-t-[60px] md:px-10 md:py-32"
+      className="rounded-t-[40px] bg-[#FDF6EC] px-5 py-20 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:rounded-t-[60px] md:px-10 md:py-32"
     >
       <FadeIn delay={0} y={40}>
         <h2

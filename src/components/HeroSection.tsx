@@ -24,7 +24,7 @@ export default function HeroSection() {
         </nav>
       </FadeIn>
 
-      <div className="overflow-hidden">
+      <div className="relative z-10 overflow-hidden">
         <FadeIn delay={0.15} y={40}>
           <h1 className="hero-heading mt-6 whitespace-nowrap text-center text-[10vw] font-black uppercase leading-none tracking-tight">
             Hai, saya reza
@@ -32,7 +32,15 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
-      <div className="mt-auto px-6 pb-7 sm:pb-8 md:px-10 md:pb-10">
+      <FadeIn delay={0.25} y={40} className="absolute inset-x-0 bottom-0 flex justify-center">
+        <img
+          src="/projects/reza.png"
+          alt="Foto Reza Maulana"
+          className="h-[80vh] max-w-[90vw] rounded-t-full object-cover object-top"
+        />
+      </FadeIn>
+
+      <div className="absolute bottom-7 left-6 z-10 sm:bottom-8 md:bottom-10 md:left-10">
         <FadeIn delay={0.35} y={20}>
           <p
             className="max-w-[160px] font-light uppercase leading-snug tracking-wide text-[#2C3440] sm:max-w-[220px] md:max-w-[260px]"
