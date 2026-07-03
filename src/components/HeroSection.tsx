@@ -2,7 +2,7 @@ import FadeIn from './FadeIn';
 
 const NAV_LINKS = [
   { label: 'Tentang', href: '#about' },
-  { label: 'Harga', href: '#price' },
+  { label: 'Layanan', href: '#price' },
   { label: 'Proyek', href: '#projects' },
   { label: 'Kontak', href: '#contact' },
 ];

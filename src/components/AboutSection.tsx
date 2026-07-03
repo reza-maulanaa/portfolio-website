@@ -74,7 +74,9 @@ export default function AboutSection() {
             </p>
           </FadeIn>
 
-          <ContactButton />
+          <a href="#contact">
+            <ContactButton />
+          </a>
         </div>
       </div>
     </section>

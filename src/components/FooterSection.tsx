@@ -3,7 +3,7 @@ import ContactButton from './ContactButton';
 
 const NAV_LINKS = [
   { label: 'Tentang', href: '#about' },
-  { label: 'Harga', href: '#price' },
+  { label: 'Layanan', href: '#price' },
   { label: 'Proyek', href: '#projects' },
 ];
 
@@ -31,9 +31,19 @@ export default function FooterSection() {
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.35} y={20}>
-          <a href="mailto:fauzanbrawlstars@gmail.com">
+        <FadeIn delay={0.35} y={20} className="flex flex-col items-center gap-4">
+          <a
+            href="https://wa.me/6287811165612?text=Halo%20Reza%2C%20saya%20tertarik%20bikin%20website%20untuk%20usaha%20saya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ContactButton />
+          </a>
+          <a
+            href="mailto:fauzanbrawlstars@gmail.com"
+            className="text-xs font-light tracking-wider text-[#2C3440] opacity-60 transition-opacity duration-200 hover:opacity-100 sm:text-sm"
+          >
+            atau email: fauzanbrawlstars@gmail.com
           </a>
         </FadeIn>
       </div>
