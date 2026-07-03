@@ -17,14 +17,14 @@ const PROJECTS: Project[] = [
     name: 'Topup Zazstore',
     category: 'Website Top Up Game',
     url: 'https://zazstore.my.id',
-    image: '/projects/zazstore-1.png',
+    image: '/projects/zazstore',
   },
   {
     number: '02',
     name: 'Notes App',
     category: 'Aplikasi Web',
     url: 'https://notes-app-five-khaki.vercel.app/notes',
-    image: '/projects/notesapp-1.png',
+    image: '/projects/notesapp',
   },
 ];
 
@@ -71,13 +71,15 @@ function ProjectCard({
           <LiveProjectButton href={project.url} />
         </div>
 
-        <img
-          src={project.image}
-          alt={`${project.name} pratinjau`}
-          loading="lazy"
-          className="w-full rounded-[40px] object-cover sm:rounded-[50px] md:rounded-[60px]"
-          style={{ height: 'clamp(300px, 40vw, 580px)' }}
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcSet={`${project.image}-pc.png`} />
+          <img
+            src={`${project.image}-mobile.png`}
+            alt={`${project.name} pratinjau`}
+            loading="lazy"
+            className="aspect-[533/830] w-full rounded-[40px] object-cover sm:rounded-[50px] md:aspect-auto md:h-[clamp(300px,40vw,580px)] md:rounded-[60px]"
+          />
+        </picture>
       </motion.div>
     </div>
   );
