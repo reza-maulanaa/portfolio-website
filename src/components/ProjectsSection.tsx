@@ -36,6 +36,15 @@ const PROJECTS: Project[] = [
     description:
       "Aplikasi catatan yang saya bangun untuk menguasai fundamental fullstack. Autentikasi lengkap dengan credentials, OAuth, dan verifikasi email",
   },
+  {
+    number: "03",
+    name: "Booking Lapangan Futsal",
+    category: "Aplikasi Booking Online",
+    url: "https://court-booking-sable.vercel.app/",
+    image: "/projects/booking-futsal",
+    description:
+      "Platform booking lapangan futsal tanpa ribet: cek jam kosong, pilih slot, langsung main. Konfirmasi cepat tanpa telepon-teleponan.",
+  },
 ];
 
 function ProjectCard({

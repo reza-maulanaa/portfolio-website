@@ -3,8 +3,10 @@ import { useEffect, useRef, useState } from "react";
 const IMAGES = [
   "/projects/zazstore",
   "/projects/notesapp",
+  "/projects/booking-futsal",
   "/projects/zazstore",
   "/projects/notesapp",
+  "/projects/booking-futsal",
 ];
 
 function Row({ images, offset }: { images: string[]; offset: number }) {
