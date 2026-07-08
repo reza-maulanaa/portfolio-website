@@ -26,7 +26,7 @@ function Row({ images, offset }: { images: string[]; offset: number }) {
             src={`${src}-mobile.png`}
             alt=""
             loading="lazy"
-            className="aspect-[533/830] rounded-2xl object-cover md:aspect-[1900/1040]"
+            className="aspect-[533/830]  object-cover md:aspect-[1900/1040]"
             style={{ width: "clamp(240px, 60vw, 420px)" }}
           />
         </picture>
@@ -53,7 +53,7 @@ export default function MarqueeSection() {
   return (
     <section
       ref={ref}
-      className="flex flex-col gap-3 rounded-t-[40px] bg-[#FDF6EC] pb-10 pt-24 shadow-[0_-24px_60px_rgba(44,52,64,0.18)] sm:rounded-t-[50px] sm:pt-32 md:rounded-t-[60px] md:pt-40"
+      className="flex flex-col gap-3 rounded-t-[40px] bg-[#FDF6EC]  pb-10 pt-24 shadow-[0_-24px_60px_rgba(44,52,64,0.18)] sm:rounded-t-[50px] sm:pt-32 md:rounded-t-[60px] md:pt-40"
     >
       <Row images={IMAGES} offset={offset} />
     </section>

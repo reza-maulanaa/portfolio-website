@@ -68,7 +68,7 @@ function ProjectCard({
   return (
     <div className="mb-20 min-h-[90vh] last:mb-0 md:mb-32">
       <motion.div
-        className="sticky top-24 rounded-[40px] border-2 border-[#2C3440] bg-[#F5E7DA] p-4 sm:rounded-[50px] sm:p-6 md:top-32 md:rounded-[60px] md:p-8"
+        className="sticky top-24 border-2 border-[#2C3440] bg-[#F5E7DA] p-4 sm:rounded-[50px] sm:p-6 md:top-32 md:rounded-[60px] md:p-8"
         style={{ scale, top: `calc(6rem + ${index * 28}px)` }}
       >
         <div className="flex flex-wrap items-center justify-between gap-4 pb-6 md:pb-8">
@@ -110,7 +110,7 @@ function ProjectCard({
             src={`${project.image}-mobile.png`}
             alt={`${project.name} pratinjau`}
             loading="lazy"
-            className="aspect-[533/830] w-full rounded-[40px] object-cover sm:rounded-[50px] md:aspect-auto md:h-[clamp(300px,40vw,580px)] md:rounded-[60px]"
+            className="aspect-[533/830] w-full object-cover sm:rounded-[50px] md:aspect-auto md:h-[clamp(300px,40vw,580px)] md:rounded-[60px]"
           />
         </picture>
       </motion.div>
@@ -129,7 +129,7 @@ export default function ProjectsSection() {
     <section
       id="projects"
       ref={ref}
-      className="relative z-10 -mt-10 rounded-t-[40px] bg-[#FDF6EC] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
+      className="relative z-10 -mt-10 bg-[#FDF6EC] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
     >
       <FadeIn delay={0} y={40}>
         <h2
