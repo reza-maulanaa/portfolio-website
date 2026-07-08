@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
   {
     number: "02",
     name: "Notes App",
-    category: "Lab Belajar Fullstack",
+    category: "Internal Tool Fullstack",
     url: "https://notes-app-five-khaki.vercel.app/notes",
     image: "/projects/notesapp",
     description:
@@ -136,7 +136,7 @@ export default function ProjectsSection() {
           className="hero-heading text-center font-black uppercase leading-none tracking-tight"
           style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
         >
-          Proyek
+          Beberapa Project
         </h2>
       </FadeIn>
 

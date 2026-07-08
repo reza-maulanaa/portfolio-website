@@ -63,7 +63,7 @@ export default function HeroSection() {
             className="mx-auto max-w-[240px] text-center font-light uppercase leading-snug tracking-wide text-[#2C3440] md:mx-0 md:max-w-[260px] md:text-left"
             style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
-            freelance web developer dari Indramayu. membangun website untuk bisnis yang ingin dianggap serius di internet
+            freelancer web developer dari Indramayu. membangun website untuk bisnis yang ingin dianggap serius di internet
           </p>
         </FadeIn>
       </div>
